@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.top {
+    width: 100%;
+}
+
+header nav ul {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    flex-wrap: wrap;
+}
+
+header nav ul .fi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+header nav ul li {
+    list-style: none;
+    color: rgb(249, 227, 101);
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul li:hover {
+    color: rgb(139, 245,74);
+}
+
+.main {
+    background-color: #0c0c0cd4;
+    background-image: url('restaurant logo.jpeg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: difference;
+    min-height: calc(100vh - 15vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    text-align: center;
+}
+
+.bol p {
+    color: rgba(239, 239, 172, 0.962);
+    font-size: 1.5em;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vw;
+    background-color: black;
+}
+
+.bottom .txt {
+    color: rgb(249, 227, 101);
+    padding: 1em;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    header nav ul li {
+        padding: 0.5em;
+        font-size: 1em;
+    }
+    .bol p {
+        font-size: 1.2em;
+    }
+    .bottom {
+        height: auto;
+        padding: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul li {
+        padding: 0.3em;
+        font-size: 0.9em;
+    }
+    .bol p {
+        font-size: 1em;
+    }
+}
+.txt:hover{
+    color: rgb(139, 245,74);
+}
